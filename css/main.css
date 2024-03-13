@@ -1,0 +1,86 @@
+body {
+  /* 기본(공통) 스타일 */
+  font-family: Pretendard, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+header {
+  padding: 22px 3.1545741325vw;
+  background-color: blue;
+}
+
+header .inner {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 1783px;
+  height: 78px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 39px;
+  padding: 0 39px;
+  align-items: center;
+}
+
+header .header__menu {
+  display: flex;
+  margin-left: 5.9411146162vw;
+}
+
+header .header__menu .header__menu-items > ul {
+  display: flex;
+  color: black;
+  align-items: center;
+  justify-content: center;
+}
+
+header .header__menu .header__menu-items a {
+  font-weight: 500;
+  font-size: 18px;
+  color: black;
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+}
+
+.has-sub > a::after {
+content: "";
+display: inline-block;
+width: 24px;
+height: 24px;
+background: url(/image/icon-arrow-down.svg);
+}
+
+header .header__menu .header__menu-items li + li {
+  margin-left: 1.3144058885vw
+}
+
+.header__menu-items .item-sub {
+  position: absolute;
+  top: 73px;
+  width: 288px;
+  padding: 24px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  background-color: #fff
+  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+header .header__menu .header__menu-items .item-sub > a {
+  padding: 6px 20px;
+  border-radius: 8px;
+  color: #000;
+  font-weight: 700;
+  letter-spacing: -.03em;
+  transition: all .25s ease-out;
+}
+
+header .header__menu .header__menu-items .item-sub > a + a {
+  margin-top: 12px;
+}
