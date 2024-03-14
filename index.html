@@ -45,55 +45,98 @@
 
 </head>
 <body>
-  <header>
-    <div class="inner">
-      <div class="header__logo">
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__logo">
         <a href="./index.html">
           <svg width="31" height="44" viewBox="0 0 31 44" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.5914 12.0555V0H0V30.1183H13.4086L13.4042 44H15.5C24.0468 44 31 36.8015 31 27.9532C31 19.9071 25.2563 13.129 17.5914 12.0555ZM13.4108 25.788H4.37493C5.01458 21.6271 8.32634 17.4639 13.4086 16.4378V25.788H13.4108ZM13.4108 12.0555C9.9069 12.555 6.04282 14.4557 3.86408 17.7216V3.87384H13.4086V12.0555H13.4108ZM17.5914 39.4707V16.4356C22.8811 17.4639 26.8194 22.3413 26.8194 27.9532C26.8194 33.565 22.8811 38.4424 17.5914 39.4707Z" fill="black"></path></svg>
             <path d="M17.5914 12.0555V0H0V30.1183H13.4086L13.4042 44H15.5C24.0468 44 31 36.8015 31 27.9532C31 19.9071 25.2563 13.129 17.5914 12.0555ZM13.4108 25.788H4.37493C5.01458 21.6271 8.32634 17.4639 13.4086 16.4378V25.788H13.4108ZM13.4108 12.0555C9.9069 12.555 6.04282 14.4557 3.86408 17.7216V3.87384H13.4086V12.0555H13.4108ZM17.5914 39.4707V16.4356C22.8811 17.4639 26.8194 22.3413 26.8194 27.9532C26.8194 33.565 22.8811 38.4424 17.5914 39.4707Z" fill="black"></path>
           </svg>
         </a>
-      </div>
-      <div class="header__menu">
-        <div class="header__menu-items">
-          <ul>
-            <li class="has-sub">
-              <a href="#">Product</a>
-              <div class="item-sub">
-                <a href="#">Everlasting Ownership</a>
-                <a href="#">Sincere Connection</a>
-                <a href="#">Simple Transactions</a>
-              </div>
-            </li>
-            <li class="has-sub">
-              <a href="#" >Solution</a>
-              <div class="item-sub">
-
-              </div>
-            </li>
-            <li>
-              <a href="#">Blog</a>
-            </li>
-            <li>
-              <a href="#">Pricing</a>
-            </li>
-            <li>
-              <a href="#">Owners</a>
-            </li>
-            <li class="has-sub">
-              <a href="#">Demo</a>
-              <div class="item-sub">
-
-              </div>
-            </li>
-            <li>
-              <a href="#">Help</a>
-            </li>
-          </ul>
+      </h1>
+      <nav class="header__nav">
+        <ul class="header__nav__menu">
+          <li class="header__nav__menu__item has-sub">
+            <a href="#">Product</a>
+            <div class="item-sub">
+              <a href="#">Everlasting Ownership</a>
+              <a href="#">Sincere Connection</a>
+              <a href="#">Simple Transactions</a>
+            </div>
+          </li>
+          <li class="header__nav__menu__item has-sub">
+            <a href="#" >Solution</a>
+            <div class="item-sub">
+              <a href="#">Entertainment</a>
+              <a href="#">Creator</a>
+              <a href="#">Esports and Games</a>
+              <a href="#">Sports</a>
+              <a href="#">Content and media</a>
+              <a href="#">Brands</a>
+            </div>
+          </li>
+          <li class="header__nav__menu__item">
+            <a href="#">Blog</a>
+          </li>
+          <li class="header__nav__menu__item">
+            <a href="#">Pricing</a>
+          </li>
+          <li class="header__nav__menu__item">
+            <a href="#">Owners</a>
+          </li>
+          <li class="header__nav__menu__item has-sub">
+            <a href="#">Demo</a>
+            <div class="item-sub">
+              <a href="https://jessica.bstage.in/" target="_blank">Beauty Creator JESSICA</a>
+              <a href="https://one-island.bstage.in/" target="_blank">The 4-member Band <br>ONE ISLAND</a>
+            </div>
+          </li>
+          <li class="header__nav__menu__item">
+            <a href="#">Help</a>
+          </li>
+        </ul>
+        <div class="header__nav__util">
+          <a href="https://account.mybstage.in/login" target="_blank" class="header__nav__util-login">Login</a>
+          <a href="https://account.mybstage.in/sign-up" target="_blank" class="header__nav__util-signup">Create a b.stage</a>
         </div>
-        <div class="header__menu-util"></div>
-      </div>
+      </nav>
     </div>
   </header>
+  <section class="visual swiper">
+    <div class="swiper-wrapper">
+      <div class="visual__01 swiper-slide">
+        <div class="visual__01__text__group">
+          <p>
+            Download
+            <br>
+            the b.stage app
+          </p>
+          <P>
+            Share the latest news first!
+          </P>
+        </div>
+        <div class="visual__01__app">
+          <a href="https://play.google.com/store/apps/details?id=com.bmf.bstage.browser" class="btn-app-google"></a>
+          <a href="https://itunes.apple.com/app/id1643063288?mt=8" class="btn-app-apple"></a>
+        </div>
+      </div>
+      <div class="visual__02 swiper-slide">
+        <div class="visual__02__text__group">
+          <p>
+            Download
+            <br>
+            the b.stage app
+          </p>
+          <P>
+            Share the latest news first!
+          </P>
+        </div>
+        <div class="visual__01__app swiper-slide">
+          <a href="https://play.google.com/store/apps/details?id=com.bmf.bstage.browser" class="btn-app-google"></a>
+          <a href="https://itunes.apple.com/app/id1643063288?mt=8" class="btn-app-apple"></a>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
