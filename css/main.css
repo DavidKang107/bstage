@@ -1,10 +1,52 @@
 body {
   /* 기본(공통) 스타일 */
   font-family: Pretendard, sans-serif;
+  box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
+}
+
+.btn-more-white {
+  height: 68px;
+  width: 277px;
+  border-radius: 34px;
+  margin-top: 48px;
+  line-height: 68px;
+  font-size: 24px;
+  background-color: #fff;
+  z-index: 10;
+  font-weight: 500;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.font-106-700 {
+  font-size: 106px;
+  font-weight: 700;
+}
+
+.font-24-500 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.margin-top-32 {
+  margin-top: 32px;
+}
+
+.visual-inner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 50px 104px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 
@@ -38,7 +80,7 @@ a {
 
 .header .header__inner .header__nav {
   display: flex;
-  margin-left: 5.9411146162vw;
+  margin-left: 113px;
   width: 100%;
   height: 100%;
   justify-content: space-between;
@@ -77,7 +119,7 @@ background: url(/image/icon-arrow-down.svg);
 }
 
 .header .header__nav__menu li + li {
-  margin-left: 1.3144058885vw
+  margin-left: 25px
 }
 
 .header .header__nav__menu__item div.item-sub {
@@ -133,11 +175,18 @@ background: url(/image/icon-arrow-down.svg);
   align-items: center;
 }
 
-.header .header__nav .header__nav__util a:first-child {
+.header .header__nav .header__nav__util .header__nav__util-login {
   font-weight: 500;
   font-size: 18px;
+  height: 46px;
+  border-radius: 8px;
+  padding: 0 10px;
+  line-height: 46px;
+  transition: 0.5s;
+  color: black;
 }
-.header__nav__util-signup {
+
+.header .header__nav .header__nav__util .header__nav__util-contact {
   width: 192px;
   height: 48px;
   margin-left: 24px;
@@ -150,18 +199,12 @@ background: url(/image/icon-arrow-down.svg);
   box-sizing: border-box;
   display: block;
   transition: 0.5s;
+  font-weight: 500;
+  font-size: 18px;
 }
 
-.header__nav__util-login {
-  height: 46px;
-  border-radius: 8px;
-  padding: 0 10px;
-  line-height: 46px;
-  transition: 0.5s;
-  color: black;
-}
 
-.header__nav__util-signup:hover {
+.header .header__nav .header__nav__util .header__nav__util-contact:hover {
   background-color: #fff;
   border: 2px solid #000;
   color: #000;
@@ -176,29 +219,15 @@ background: url(/image/icon-arrow-down.svg);
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.visual .visual__01 {
-  background-image: url(/image/visual_bg_1.png);
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 1902px;
   height: 954px;
   margin: 0 auto;
-  padding: 50px 104px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  position: relative;
 }
 
-.visual__01__text__group p:first-child {
-  font-size: 106px;
-  font-weight: 700;
-}
-
-.visual__01__text__group p:last-child {
-  font-size: 24px;
-  margin-top: 32px;
-  font-weight: 500;
+/* visual 01 영역 */
+.visual .visual__01{
+  background-image: url(/image/visual_bg_1.png);
 }
 
 .visual__01__app {
@@ -223,19 +252,48 @@ background: url(/image/icon-arrow-down.svg);
   background-size: cover;
 }
 
+/* visual 02 영역 */
+
 .visual .visual__02 {
   background-image: url("/image/visual_bg_2.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 1902px;
-  height: 954px;
-  margin: 0 auto;
-  padding: 50px 104px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  color: #fff;
 }
 
-/* .swiper-wrapper {
+
+.visual .visual__02 .visual__02__more {
+  height: 68px;
+  width: 277px;
+  border-radius: 34px;
+  margin-top: 48px;
+  line-height: 68px;
+  font-size: 24px;
+  background-color: #fff;
+  z-index: 10;
+  font-weight: 500;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* visual 03 영역 */
+
+
+
+.visual .swiper-pagination {
+  bottom: 80px;
   display: flex;
-} */
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  height: 8px;
+  width: 8px;
+  background-color: #fff;
+  margin: 0 12px !important;
+}
+
+.swiper-pagination-bullet-active {
+  height: 16px;
+  width: 16px;
+  background-color: #fff;
+}

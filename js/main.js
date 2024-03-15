@@ -6,4 +6,19 @@ window.addEventListener('scroll', function() {
   }
 });
 
-// 어워즈 섹션 슬라이드 기능
+new Swiper('.swiper-container', {
+  direction: 'horizontal',
+  loop: true, 
+  centeredSlides: true,
+  // autoplay: true,
+  // autoplay: {
+  //   delay: 5000 
+  // },
+  speed: 1000,
+  slidesPerView: 1,
+  spaceBetween: 3000,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
