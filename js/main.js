@@ -8,15 +8,15 @@ window.addEventListener('scroll', function() {
 
 new Swiper('.swiper-container', {
   direction: 'horizontal',
-  loop: true, 
+  loop: false, 
   centeredSlides: true,
   autoplay: true,
   autoplay: {
     delay: 5000 
   },
-  speed: 1000,
+  speed: 20,
   slidesPerView: 1,
-  spaceBetween: 3000,
+  spaceBetween: 500,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
