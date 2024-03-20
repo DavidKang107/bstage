@@ -330,7 +330,7 @@ header .header__nav .header__nav__util .header__nav__util-login {
 /* visual 02 영역 */
 .visual .visual__02 {
   background-image: url("/image/visual_bg_2.png");
-  color: #fff;
+  color: #000;
 }
 
 /* visual 03 영역 */
@@ -389,7 +389,7 @@ header .header__nav .header__nav__util .header__nav__util-login {
 
 .bstage .bstage__text-group {
   opacity: 0;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .bstage .bstage__text-group.show {
@@ -448,7 +448,7 @@ header .header__nav .header__nav__util .header__nav__util-login {
 
 .owners .owners__text-group {
   opacity: 0;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .owners .owners__text-group.show {
@@ -473,12 +473,6 @@ header .header__nav .header__nav__util .header__nav__util-login {
 
 .font-round-white {
   border: 2px solid #fff;
-}
-
-
-.owners .owners__items .owners__item .hover--hidden:hover {
-  opacity: 0;
-  background-size: 150%;
 }
 
 .owners__items {
@@ -601,35 +595,32 @@ header .header__nav .header__nav__util .header__nav__util-login {
   text-align: center;
 }
 
-.owners__items-hidden:hover {
+.owners__items .owners__item:hover a:last-child {
   opacity: 1;
 }
 
-.owners__items-hidden-black:hover {
-  opacity: 1;
+.owners__items .owners__item:hover a:first-child > img {
+  transform: scale(2);
+  opacity: 0;
 }
 
-.owners__items__01-logo {
-  background-image: url("/image/owners_01.png");
-  transition: 0.5s;
+.owners__item a {
+  transition: 1s;
+}
+
+.owners__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 1s;
 }
 
 .owners__items__01 a:last-child {
   background-color: #000;
 }
 
-.owners__items__02-logo {
-  background-image: url("/image/owners_02.png");
-  transition: 0.5s;
-}
-
 .owners__items__02 a:last-child {
   background-color: #FFA800;
-}
-
-.owners__items__03-logo {
-  background-image: url("/image/owners_03.png");
-  transition: 0.5s;
 }
 
 .owners__items__03 a:last-child {
@@ -640,45 +631,20 @@ header .header__nav .header__nav__util .header__nav__util-login {
   color: #000;
 }
 
-.owners__items__04-logo {
-  background-image: url("/image/owners_04.png");
-  transition: 0.5s;
-}
-
 .owners__items__04 a:last-child {
   background-color: #000;
-}
-
-.owners__items__05-logo {
-  background-image: url("/image/owners_05.png");
-  transition: 0.5s;
 }
 
 .owners__items__05 a:last-child {
   background-color: #A6C5E6;
 }
 
-.owners__items__06-logo {
-  background-image: url("/image/owners_06.png");
-  transition: 0.5s;
-}
-
 .owners__items__06 a:last-child {
   background-color: #FFA800;
 }
 
-.owners__items__07-logo {
-  background-image: url("/image/owners_07.png");
-  transition: 0.5s;
-}
-
 .owners__items__07 a:last-child {
   background-color: #FF5839;
-}
-
-.owners__items__08-logo {
-  background-image: url("/image/owners_08.png");
-  transition: 0.5s;
 }
 
 .owners__items__08 a:last-child {
@@ -696,7 +662,7 @@ header .header__nav .header__nav__util .header__nav__util-login {
 
 .advantage .advantage__green__visual {
   opacity: 0;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .advantage .advantage__green__visual.show {
@@ -750,7 +716,7 @@ header .header__nav .header__nav__util .header__nav__util-login {
 
 .advantage .advantage__pink__visual {
   opacity: 0;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .advantage .advantage__pink__visual.show {
@@ -802,7 +768,7 @@ header .header__nav .header__nav__util .header__nav__util-login {
 
 .together .together__text-group {
   opacity: 0;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .together .together__text-group.show {
@@ -820,7 +786,7 @@ header .header__nav .header__nav__util .header__nav__util-login {
   grid-gap: 0;
   transform: translateY(100px);
   opacity: 0;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .together .together__company.show {
