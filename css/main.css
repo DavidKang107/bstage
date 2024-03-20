@@ -37,9 +37,17 @@ a {
   color: #fff;
 }
 
-.btn-black:hover {
+.btn-blue {
   background-color: #3067ec;
   color: #fff;
+}
+
+.btn-black:hover {
+  background-color: #3067ec;
+}
+
+.btn-blue:hover {
+  background-color: #000;
 }
 
 .font-106-700 {
@@ -780,6 +788,106 @@ header .header__nav .header__nav__util .header__nav__util-login {
 .advantage .advantage__pink .advantage__pink__visual .advantage__pink__visual-right > div {
   margin-top: 20px;
 }
+
+/* together */
+
+.together {
+  margin-top: 260px;
+  padding: 0 87px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.together .together__text-group {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.together .together__text-group.show {
+  opacity: 1;
+}
+
+
+
+.together .together__company {
+  margin-top: 106px;
+  padding-bottom: 118px;
+  display: grid;
+  grid-template-columns: repeat(6, 288px);
+  grid-template-rows: repeat(2, 186px);
+  grid-gap: 0;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.together .together__company.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.together .together__company > div {
+  padding: 14px;
+}
+
+.together .together__company > div img {
+  /* justify-items: center; */
+  background-color: #f8f8f8;
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* banner */
+.banner {
+  height: 893px;
+  padding: 80px 60px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+.banner .banner__background_left {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: -14.6vw;
+  width: 73.5vw;
+  height: 73.5vw;
+  border-radius: 100%;
+  background-color: #c4e5ae;
+  z-index: -1;
+  transform: translateY(-500px);
+  transition: 1s;
+}
+
+.banner .banner__background_left.show {
+  transform: translateY(0);
+}
+
+.banner .banner__background_right {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: #c4e5ae;
+  z-index: -1;
+}
+
+.banner .banner__inner .btn {
+  margin-top: 60px;
+}
+
+
+
 
 /* footer */
 footer {
