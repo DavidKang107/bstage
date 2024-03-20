@@ -1,8 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   /* 기본(공통) 스타일 */
   font-family: Pretendard, sans-serif;
   box-sizing: border-box;
   overflow-x: hidden;
+  width: 100%;
 }
 
 a {
@@ -374,6 +379,15 @@ header .header__nav .header__nav__util .header__nav__util-login {
   position: relative;
 }
 
+.bstage .bstage__text-group {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.bstage .bstage__text-group.show {
+  opacity: 1;
+}
+
 .bstage .bstage__video {
   width: 1700px;
   height: 956px;
@@ -424,6 +438,15 @@ header .header__nav .header__nav__util .header__nav__util-login {
   overflow: hidden;
 }
 
+.owners .owners__text-group {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.owners .owners__text-group.show {
+  opacity: 1;
+}
+
 /* ownwers 라운드 글꼴 */
 
 .font-round {
@@ -468,13 +491,13 @@ header .header__nav .header__nav__util .header__nav__util-login {
   position: absolute;
   display: flex;
   flex-wrap: nowrap;
-  animation: marquee_1st 10s linear infinite;
+  animation: marquee_1st 15s linear infinite;
 }
 .owners__items-marquee__2nd {
   position: absolute;
   display: flex;
   flex-wrap: nowrap;
-  animation: marquee_2nd 10s linear infinite;
+  animation: marquee_2nd 15s linear infinite;
 }
 
 .owners__items-pause {
@@ -663,6 +686,16 @@ header .header__nav .header__nav__util .header__nav__util-login {
   background-color: #c4e5ae;
 }
 
+.advantage .advantage__green__visual {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.advantage .advantage__green__visual.show {
+  opacity: 1;
+}
+
+
 .advantage .advantage__green .advantage__green__inner {
   width: 1701px;
   height: 960px;
@@ -706,6 +739,16 @@ header .header__nav .header__nav__util .header__nav__util-login {
 .advantage .advantage__pink {
   background-color: #ffdaff;
 }
+
+.advantage .advantage__pink__visual {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.advantage .advantage__pink__visual.show {
+  opacity: 1;
+}
+
 
 .advantage .advantage__pink .advantage__pink__inner {
   width: 1701px;
