@@ -67,7 +67,6 @@ function handleScroll(event) {
   if (document.querySelector('.show_2')) {
     // y축으로 스크롤한 값
     const scrollY = window.scrollY;
-    console.log('Scrolled Y:', scrollY);
     const box = document.querySelectorAll('.show_2 > div:first-child')
     box.forEach(function (item) {
       item.style.transform = `translateY(${scrollY*0.4-2000}px)`

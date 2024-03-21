@@ -120,7 +120,7 @@ header {
 }
 
 header.hidden {
-  transform: translateY(-100px);
+  transform: translateY(-200px);
 }
 
 header .header__inner {
